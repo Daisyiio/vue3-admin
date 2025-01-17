@@ -1,0 +1,105 @@
+/* 通用样式重置 */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 元素设置为块级 */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* 默认的 body 样式 */
+body {
+  line-height: 1;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* 清除列表的默认样式 */
+ol, ul {
+  list-style: none;
+}
+
+/* 清除表格的边距和边框 */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* 清除链接的默认下划线和颜色 */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* 清除按钮的默认样式 */
+button {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+/* 输入框和表单元素样式重置 */
+input, textarea, select, button {
+  font-family: inherit;
+  font-size: 100%;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+/* 清除图片的间距 */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* 默认的 box-sizing 设置为 border-box */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* 隐藏滚动条（可选） */
+/* 需要时可以启用这段代码 */
+/*
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+*/
+
+/* 禁止拖动图片 */
+img, svg {
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+/* 禁用用户选中（可选） */
+/* 
+* {
+  user-select: none;
+} 
+*/
