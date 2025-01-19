@@ -7,9 +7,7 @@ export default {
   extends: [
     'eslint:recommended',
     'plugin:vue/vue3-essential', // 或 vue3-recommended
-    'plugin:vue/vue3-recommended', // 或其他适合的 vue 配置
     'plugin:prettier/recommended', // 开启 Prettier 支持
-    'prettier', // 确保 Prettier 配置与 ESLint 不冲突
   ],
   parserOptions: {
     ecmaVersion: 2021,

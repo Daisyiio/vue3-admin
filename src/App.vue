@@ -19,4 +19,8 @@ const locale = computed(() => (language.value === 'zh-cn' ? zhCn : en));
   </div>
 </template>
 
-<style scoped></style>
+<style>
+#app{
+  height: 100%;
+}
+</style>
