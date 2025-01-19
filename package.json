@@ -11,6 +11,8 @@
     "lint": "eslint ."
   },
   "dependencies": {
+    "@ant-design/icons-vue": "^7.0.1",
+    "ant-design-vue": "4.x",
     "element-plus": "^2.9.3",
     "path-browserify": "^1.0.1",
     "vue": "^3.5.13",

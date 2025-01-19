@@ -2,7 +2,6 @@
   <div class="MenuCpm">
     <!-- Content here -->
     <div class="icon-header" :style="{ '--headerHeight': `${headerHeight}px` }">
-
     </div>
     <div v-for="route in childRoutes" :key="`${route.path}`" class="menu-item">
       {{ route.name }}
@@ -44,6 +43,14 @@ onUnmounted(() => {
 
   .menu-item {
     width: 100%;
+    height: 40px;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #1E1E1E;
+    /* 悬停背景色：灰色 */
+
   }
 
   .icon-header {
