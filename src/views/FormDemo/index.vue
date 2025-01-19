@@ -1,28 +1,15 @@
 <template>
-  <div class="app">
+  <div class="FormDemo">
     <!-- Content here -->
-    <div>
-      11
-      <div>222</div>
-      <div>222</div>
-      <div>222</div>
-    </div>
+    form
   </div>
 </template>
 
 <script setup lang="tsx">
+import { onMounted, onUpdated, onUnmounted } from 'vue';
 defineOptions({
-  name: 'HomeView',
+  name: 'FormDemo', // 给组件指定名称
 });
-import {
-  // ref,
-  // reactive,
-  // computed,
-  onMounted,
-  onUpdated,
-  onUnmounted,
-} from 'vue';
-
 onMounted(() => {
   console.log('Component mounted');
 });
@@ -37,4 +24,7 @@ onUnmounted(() => {
 </script>
 
 <style lang="scss" scoped>
+.FormDemo {
+  width: 100%;
+}
 </style>

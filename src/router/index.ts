@@ -4,15 +4,23 @@ import { createRouter, createWebHistory } from 'vue-router';
 const routes = [
   {
     path: '/',
-    name: 'Home',
+    name: 'AdminLayout',
     component: () => import('@/layouts/index.vue'),
     children: [
       {
         path: '/table',
         name: 'table',
-        component: () => import('@/views/table/index.vue'),
+        component: () => import('@/views/TableDemo/index.vue'),
         meta: {
           title: '表格'
+        }
+      },
+      {
+        path: '/form',
+        name: 'form',
+        component: () => import('@/views/FormDemo/index.vue'),
+        meta: {
+          title: '表单'
         }
       }
     ]
