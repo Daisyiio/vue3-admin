@@ -1,28 +1,20 @@
 <template>
-  <div class="app">
+  <div class="water-fallflow">
     <!-- Content here -->
-    <div>
-      11
-      <div>222</div>
-      <div>222</div>
-      <div>222</div>
-    </div>
+    <WaterFallFlow />
   </div>
 </template>
 
 <script setup lang="tsx">
-defineOptions({
-  name: 'HomeView',
-});
 import {
-  // ref,
-  // reactive,
-  // computed,
+  ref,
+  reactive,
+  computed,
   onMounted,
   onUpdated,
   onUnmounted,
 } from 'vue';
-
+import WaterFallFlow from './WaterFallFlow.vue';
 onMounted(() => {
   console.log('Component mounted');
 });
@@ -36,4 +28,7 @@ onUnmounted(() => {
 });
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.water-fallflow {
+}
+</style>

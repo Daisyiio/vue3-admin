@@ -1,23 +1,14 @@
 <template>
-  <div class="app">
+  <div class="WaterFallFlow-cpm">
     <!-- Content here -->
-    <div>
-      11
-      <div>222</div>
-      <div>222</div>
-      <div>222</div>
-    </div>
   </div>
 </template>
 
 <script setup lang="tsx">
-defineOptions({
-  name: 'HomeView',
-});
 import {
-  // ref,
-  // reactive,
-  // computed,
+  ref,
+  reactive,
+  computed,
   onMounted,
   onUpdated,
   onUnmounted,
@@ -36,4 +27,8 @@ onUnmounted(() => {
 });
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.WaterFallFlow-cpm {
+  width: 100%;
+}
+</style>

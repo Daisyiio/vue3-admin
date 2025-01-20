@@ -7,6 +7,7 @@
         <th>数量</th>
         <th>操作</th>
       </tr>
+
       <tbody>
         <tr v-for="(item, index) in tableList" :key="index">
           <td>{{ item.name }}</td>
@@ -16,7 +17,9 @@
             {{ item.num }}
             <button @click="item.num <= 99 ? item.num++ : null">++</button>
           </td>
-          <td><button @click="del(index)">删除</button></td>
+          <td>
+            <button @click="del(index)">删除</button>
+          </td>
         </tr>
       </tbody>
       <tfoot>
@@ -26,7 +29,6 @@
         </tr>
       </tfoot>
     </table>
-
   </div>
 </template>
 
@@ -34,34 +36,27 @@
 defineOptions({
   name: 'TableDemo',
 });
-import {
-  ref,
-  computed,
-  onMounted,
-  onUpdated,
-  onUnmounted,
-} from 'vue';
+import { ref, computed, onMounted, onUpdated, onUnmounted } from 'vue';
 type TableObjType = {
-  name: string,
-  price: number,
-  num: number
-
-}
-const event = 'click'
+  name: string;
+  price: number;
+  num: number;
+};
+const event = 'click';
 const tableList = ref<TableObjType[]>([
   { name: '物品1', price: 500, num: 0 },
   { name: '物品2', price: 200, num: 0 },
   { name: '物品3', price: 1000, num: 0 },
   { name: '物品4', price: 2200, num: 0 },
-])
+]);
 const sumPrice = computed(() => {
   return tableList.value.reduce((prve, next) => {
-    return prve + next.price * next.num
-  }, 0)
-})
+    return prve + next.price * next.num;
+  }, 0);
+});
 const del = function (index: number) {
-  tableList.value.splice(index, 1)
-}
+  tableList.value.splice(index, 1);
+};
 onMounted(() => {
   console.log('Component mounted');
 });
@@ -95,6 +90,5 @@ onUnmounted(() => {
   th {
     background-color: #f2f2f2;
   }
-
 }
 </style>

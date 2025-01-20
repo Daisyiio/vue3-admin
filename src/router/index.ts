@@ -12,18 +12,26 @@ const routes = [
         name: 'table',
         component: () => import('@/views/TableDemo/index.vue'),
         meta: {
-          title: '表格'
-        }
+          title: '表格',
+        },
       },
       {
         path: '/form',
         name: 'form',
         component: () => import('@/views/FormDemo/index.vue'),
         meta: {
-          title: '表单'
-        }
-      }
-    ]
+          title: '表单',
+        },
+      },
+      {
+        path: '/water-fallflow',
+        name: 'waterFallflow',
+        component: () => import('@/views/waterfallFlow/index.vue'),
+        meta: {
+          title: '瀑布流',
+        },
+      },
+    ],
   },
 ];
 
