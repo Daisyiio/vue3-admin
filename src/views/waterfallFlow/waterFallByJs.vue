@@ -1,8 +1,6 @@
 <template>
-  <div class="water-fallflow">
-    <!-- Content here -->
-    <!-- <WaterFallFlow /> -->
-    <waterFallByJs />
+  <div class="waterFallByJs">
+    <div class="container" id="container"></div>
   </div>
 </template>
 
@@ -15,8 +13,7 @@ import {
   onUpdated,
   onUnmounted,
 } from 'vue';
-// import WaterFallFlow from './WaterFallFlow.vue';
-import waterFallByJs from './waterFallByJs.vue';
+
 onMounted(() => {
   console.log('Component mounted');
 });
@@ -31,9 +28,18 @@ onUnmounted(() => {
 </script>
 
 <style lang="scss" scoped>
-.water-fallflow {
+.waterFallByJs {
   width: 100%;
   height: 100%;
   overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  .container {
+    width: 90%;
+    border: solid 2px;
+    position: relative;
+    margin: auto 0;
+  }
 }
 </style>

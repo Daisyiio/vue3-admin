@@ -1,6 +1,8 @@
 <template>
   <div class="TableDemo">
     <table>
+      <thead>
+
       <tr>
         <th>姓名</th>
         <th>价格</th>
@@ -8,6 +10,7 @@
         <th>操作</th>
       </tr>
 
+      </thead>
       <tbody>
         <tr v-for="(item, index) in tableList" :key="index">
           <td>{{ item.name }}</td>

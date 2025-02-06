@@ -30,6 +30,13 @@ const routes = [
         meta: {
           title: '瀑布流',
         },
+      }, {
+        path: '/swiper',
+        name: 'Swiper',
+        component: () => import('@/views/Swiper/swiper.vue'),
+        meta: {
+          title: '轮播',
+        },
       },
     ],
   },
